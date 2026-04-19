@@ -53,7 +53,7 @@ def login_page():
         margin-bottom: 6px;
     }}
     .login-subtitle {{
-        font-size: 14px;
+        font-size: 20px;
         color: black;
         text-align: center;
         margin-bottom: 8px;
@@ -108,7 +108,7 @@ def login_page():
         st.markdown("""
         <div class='login-card'>
             <div class='login-title'>🏠 Dari.ma</div>
-            <div class='login-subtitle'>Estimation intelligente de prix immobilier au Maroc</div>
+            <div class='login-subtitle'><b>Estimation intelligente de prix immobilier au Maroc</b></div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -125,13 +125,13 @@ def login_page():
             else:
                 st.error("Identifiants incorrects")
 
-        st.markdown("""
-        <div class='login-badge'>
-            Comptes de test &nbsp;|&nbsp;
-            <b>admin</b> / admin123 &nbsp;·&nbsp;
-            <b>user1</b> / maroc2024
-        </div>
-        """, unsafe_allow_html=True)
+       # st.markdown("""
+       # <div class='login-badge'>
+        #    Comptes de test &nbsp;|&nbsp;
+         #   <b>admin</b> / admin123 &nbsp;·&nbsp;
+          #  <b>user1</b> / maroc2024
+        #</div> 
+        #""", unsafe_allow_html=True)
 
 def main_app():
     username = st.session_state.username
